@@ -11,7 +11,7 @@ import scala.io.StdIn.readLine
 object Publisher {
 
   val sqsClient: SqsClient = SqsClient.create()
-  val queueName            = "sample-task-queue"
+  val queueName: String    = Constants.queueName
   var queueUrl: String     = ""
 
   def main(args: Array[String]): Unit = {

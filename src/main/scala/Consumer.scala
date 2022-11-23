@@ -12,7 +12,7 @@ import scala.util.{Failure, Success, Try}
 object Consumer {
 
   val sqsClient: SqsClient = SqsClient.create()
-  val queueName            = "sample-task-queue"
+  val queueName: String    = Constants.queueName
   var queueUrl: String     = ""
 
   def main(args: Array[String]): Unit = {
