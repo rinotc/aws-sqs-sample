@@ -1,3 +1,3 @@
 object Constants {
-  val queueName = "sample-task-queue"
+  val queueName = "sample-queue"
 }

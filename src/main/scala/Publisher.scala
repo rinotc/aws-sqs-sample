@@ -32,6 +32,8 @@ object Publisher {
       if (input == "q") {
         sendSqsMessage("quitConsumer")
         loopFlag = false
+      } else if (input.isBlank) {
+        println("please input something...")
       } else {
         sendSqsMessage(input)
       }
