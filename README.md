@@ -15,10 +15,10 @@ AWSのクレデンシャル情報はローカルにセットされているデ�
 
 ## それぞれの説明
 
-- `CreateQueue`: これ用のQueueを作成する
-- `DeleteQueue`: これ用のQueueを削除する
+- `CreateQueue`: `sample-queue` という名前のQueueを作成する
+- `DeleteQueue`: `sample-queue` という名前のQueueを削除する
 - `Publisher`: 標準入力で受け取った文字列をQueueに投げる
-- `Consumer`: `Queue`からメッセージをConsumeし、出力する
+- `Consumer`: QueueからメッセージをConsumeし、出力する
 
 ## CreateQueue
 
@@ -51,7 +51,7 @@ input>
 
 ## Consumer
 
-Publisher側で投げたメッセージを受け取って、出力します。
+Publisher側で投げたメッセージを受け取って出力します。
 Publisher側で `q` を入力すると、SQS経由で終了メッセージを受けて、タスクを終了します。
 
 ```shell
